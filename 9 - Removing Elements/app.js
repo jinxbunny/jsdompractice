@@ -11,7 +11,7 @@ button.addEventListener('click', () => {
     listItem.textContent = input.value;
     
     list.appendChild(listItem);
-
+    
     input.value = '';
 })
 
