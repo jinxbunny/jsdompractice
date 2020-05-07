@@ -23,3 +23,20 @@ removeBtn.addEventListener('click', () => {
 })
 
 /*New code below*/
+
+document.addEventListener("click",(event)=> {
+    console.log(event);
+    console.log(event.target);
+    window.alert("don't click me there!")
+})
+
+list.addEventListener("mouseover",(event)=>{
+    if(event.target.tagName == "LI"){
+    event.target.textContent = event.target.textContent.toUpperCase();
+    }
+})
+list.addEventListener("mouseout",(event)=>{
+    if(event.target.tagName == "LI"){
+    event.target.textContent = event.target.textContent.toLowerCase();
+    }
+})
